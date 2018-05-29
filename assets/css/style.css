@@ -1,3 +1,149 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+}
+.container {
+	background-color: white;
+
+}
+.landingPageimg1 {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.landingPage1 {
+	background-image: url("../images/img2.jpg");
+	background-size: cover;
+	height: 50vh;
+
+}
+
+.landingPage3 {
+	min-height: 300px;
+	background-color: white;
+}
+
+.footer {
+	background-color: black;
+	color: white;
+
+}
+
+
+.landingPageimg {
+		height: 100%;
+		width: 100%;
+}
+a {
+	text-decoration: none;
+	color: #bfbfbf;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+.header {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 2em;
+	color: white;
+}
+
+.navbar-brand {
+	font-family: 'Aldrich', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+
+[class*=btn-light] {
+	position: absolute;
+	top: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+/*for index2*/
+
+.headlines {
+	min-height: 500px;
+	background-color: white;
+	
+	}
+
+
+.finalscore {
+	font-size: 1.5em;
+	color: red; 
+
+}
+
+li {
+	list-style: none;
+}
+
+
+
+.sidebar {
+	background-color:  #4d4d4d;
+	color: white;
+	opacity: .8;
+}
+
+
+hr {
+
+	background-color: white;
+}
+
+.galleryimg {
+	width: 150px;
+	height: 150px;
+}
+
+.galleryimg:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,6 +186,33 @@
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+	
+	.landingPage1 {
+		height: 70vh
+	}
+	.landingPage2 {
+		height: 500px;
+	}
+	.landingPageimg {
+		height: 100%;
+		width: 100%;
+	}
+	.header {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 4em;
+	color: white;
+	}
+
+
+
+
+
+	/*index 2*/
+	.headlines {
+	min-height: 500px;
+	background-color: white;
+	
+	}
 
 
 }
