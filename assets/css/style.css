@@ -5,23 +5,24 @@
 }
 
 body {
-	background-color: white;
+	background-color: #999999;
 }
 .container {
 	background-color: white;
+	max-width: 1600px;
 
-}
-.landingPageimg1 {
-	position: relative;
-	height: 100%;
-	width: 100%;
 }
 
 .landingPage1 {
-	background-image: url("../images/img2.jpg");
+	background-color: #333333;
 	background-size: cover;
 	height: 50vh;
-
+	position: relative;
+	
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
 .landingPage3 {
@@ -34,7 +35,9 @@ body {
 	color: white;
 
 }
-
+#navbar {
+	background-color: #333333;
+}
 
 .landingPageimg {
 		height: 100%;
@@ -53,6 +56,7 @@ a:hover {
 	font-family: 'Aldrich', sans-serif;
 	font-size: 2em;
 	color: white;
+	
 }
 
 .navbar-brand {
@@ -118,25 +122,21 @@ hr {
 	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
+.login {
+	border-radius: 2px;
+	border: 1px solid #b3b3b3;
+	width: 300px;
+}
+.signup {
+	border-radius: 2px;
+	border: 1px solid #b3b3b3;
+	width: 300px;
+}
 
+input {
+	height: 30px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -188,7 +188,9 @@ hr {
 @media (min-width: 1200px) {
 	
 	.landingPage1 {
-		height: 70vh
+		height: 70vh;
+		position: relative;
+
 	}
 	.landingPage2 {
 		height: 500px;
@@ -198,11 +200,26 @@ hr {
 		width: 100%;
 	}
 	.header {
-	font-family: 'Aldrich', sans-serif;
-	font-size: 4em;
-	color: white;
-	}
+		font-family: 'Aldrich', sans-serif;
+		font-size: 6em;
+		color: white;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
+	}
+	.header1 {
+		font-family: 'Aldrich', sans-serif;
+		font-size: 1.5em;
+		color: white;	
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+
+	}
 
 
 
@@ -213,6 +230,9 @@ hr {
 	background-color: white;
 	
 	}
-
-
+	.container-games {
+		min-height: 1000px;
+	}
+	
+	
 }
