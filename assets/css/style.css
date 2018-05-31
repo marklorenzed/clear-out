@@ -2,6 +2,9 @@
 	padding:0;
 	margin:0;
 	box-sizing: border-box;
+
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -10,15 +13,31 @@ body {
 .container {
 	background-color: white;
 	max-width: 1600px;
-
+	overflow-x: hidden;
 }
 
 .landingPage1 {
-	background-color: #333333;
-	background-size: cover;
-	height: 50vh;
+	height: 500px;
 	position: relative;
-	
+}
+.backdrop {
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	max-height: 500px;
+	max-width: 800px; 
+	opacity: 1;
+}
+.about {
+	border: 1px solid #333333;
+	border-radius: 2px;
+	height: 100%;
+}
+.aboutAvatar {
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	border: 1px solid #333333;
 }
 img {
     width: 100%;
@@ -31,9 +50,8 @@ img {
 }
 
 .footer {
-	background-color: black;
+	background-color: #333333;
 	color: white;
-
 }
 #navbar {
 	background-color: #333333;
@@ -45,38 +63,113 @@ img {
 }
 a {
 	text-decoration: none;
-	color: #bfbfbf;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
 }
 
+.nav-link {
+	color: #b0b0b0;
+}
 a:hover {
 	color: white;
 	text-decoration: none;
 }
-.header {
-	font-family: 'Aldrich', sans-serif;
-	font-size: 2em;
-	color: white;
-	
-}
 
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
 .navbar-brand {
-	font-family: 'Aldrich', sans-serif;
-	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
 	font-size: 2em;
+	color: #b35900;
 }
 
 
-[class*=btn-light] {
+.btn-1 {
 	position: absolute;
-	top: 80%;
+	top: 95%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	background-color: orange;
+	border: 3px solid orange;
+}
+
+.btn-danger {
+	background-color: #cc2900;
+	border: 1px solid #cc2900;
+	border-radius: 1px;
+}
+
+.btn-danger:hover {
+	background-color: #ff3300;
+}
+
+.btn-1:hover {
+	height: 40px;
+	width: 40px;
+	border: 10px solid orange;
+}
+.btnHeader {
+	min-width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid #ff3300;
+	background-color: #ff3300;
+	padding: 0 20px 0 20px;
+	color: white;
+}
+.btnHeader:hover {
+	background-color: #cc2900;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.header {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 7em;
+	font-weight: 800;
+	color: #b35900;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 
+.header1 {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+
+}
 
 
-
-
-
+.logo {
+	height: 50px;
+	width: 50px;
+}
 
 
 
@@ -90,8 +183,8 @@ a:hover {
 
 
 .finalscore {
-	font-size: 1.5em;
-	color: red; 
+	font-size: 1em;
+	color: indianred; 
 
 }
 
@@ -132,11 +225,71 @@ hr {
 	border: 1px solid #b3b3b3;
 	width: 300px;
 }
-
 input {
 	height: 30px;
-
 }
+.ogleague {
+	border: 1px solid #f2f2f2;
+	border-radius: 1px;
+	background-color: #f2f2f2;
+}
+.card {
+	border: 1px solid #f2f2f2;
+	border-radius: 1px;
+	background-color: #f2f2f2;
+}
+.leagueDetails {	
+	color: gray;
+	font-size: 1em;
+}
+#date,
+#time{
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+}
+.ucgames {
+	max-height: 500px; 
+}
+
+.tablecontainer {
+	background-color: #cccccc;
+	color: black;
+}
+th {
+	font-weight: 400;
+}
+.pastGames li{
+	color: white;
+}
+.pastGames li:hover {
+	color: black;
+}
+
+a>i[class*=fa-facebook-square]:hover	{
+	color: #3B5998 ;
+}
+a>i[class*=fa-instagram]:hover	{
+	color: #ff00ff;
+}
+a>i[class*=fa-twitter-square]:hover	{
+	color: #1DA1F2 ;
+}
+.form {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.container-signup {
+	position: relative;
+	min-height: 1000px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -163,24 +316,39 @@ input {
 
 
 /*// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+// No media query for `xs` since this is the default in Bootstrap*/
 
-// Small devices (landscape phones, 576px and up)*/
+
+
+/*/ Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+	.landingPage1 {
+
+	height: 50vh;
 	
+	}
+
 
 }
 
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+	.landingPage1 {
+
+	height: 50vh;
 	
+	}
 
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	.landingPage1 {
+
+	height: 80vh;
 	
+	}
 
 }
 
@@ -188,9 +356,8 @@ input {
 @media (min-width: 1200px) {
 	
 	.landingPage1 {
-		height: 70vh;
+		height: 100vh;
 		position: relative;
-
 	}
 	.landingPage2 {
 		height: 500px;
@@ -200,28 +367,23 @@ input {
 		width: 100%;
 	}
 	.header {
-		font-family: 'Aldrich', sans-serif;
-		font-size: 6em;
-		color: white;
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
+		font-size: 8em;
 	}
+
 	.header1 {
-		font-family: 'Aldrich', sans-serif;
-		font-size: 1.5em;
-		color: white;	
 		position: absolute;
-		top: 60%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
+		width: 100%;
+		font-size: 1.5em;	
 
 	}
-
-
+	[class*=btn-light] {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+	}
 
 
 	/*index 2*/

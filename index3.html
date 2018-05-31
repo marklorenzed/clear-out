@@ -10,12 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" type="img/png/jpg" href="assets/images/icon.png">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!-- google font  -->
-	<link href="https://fonts.googleapis.com/css?family=Aldrich|Julius+Sans+One|Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Raleway|Exo:900,900i|Kanit:800|Passion+One:700" rel="stylesheet">
 
-	<script type="text/javascript" src="script.js"></script>
+	
 
 	<title></title>
 </head>
@@ -23,27 +24,26 @@
 
 	
 	
-	<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-			
-		<a href="#" class="navbar-brand p-0 m-0"> CLEAR OUT </a>
+	<nav class="navbar navbar-expand-lg  navbark-dark" id="navbar">
+		
+		<a href="#" class="navbar-brand p-0 m-0"><img class="logo" src="assets/images/logo.png">CLEAR OUT</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<div class="navbar-nav ml-auto">
-				<div class="nav-item">
-					<a href="index.html" class="nav-link">Home </a>
-				</div>
-				<div class="nav-item">
-					<a href="index2.html" class="nav-link">On-going League</a>
-				</div>
-				<div class="nav-item active">
-					<a href="index3.html" class="nav-link">Pick-up games</a>
-				</div>
-			</div>
-
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">HOME <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="index2.html">ON-GOING LEAGUE</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="index3.html">PICK-UP GAMES</a>
+				</li>	
+			</ul>
 		</div>
 	</nav>
 	<div class="container container-games">
@@ -51,13 +51,9 @@
 		<div class="row p-3">
 			<div class="jumbotron jumbotron-fluid bg-light col-12 p-4">
 
-			<h1 class="display-4">Pick-up Games</h1>
-			<p class="lead">Here you can checkout upcoming pick-up games near you. Reserve now to ensure a slot!</p>
-			<hr class="my-4">
-			<p>Do you want to hoop but no one to hoop with? Invite players near you.</p>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pugregform">
-			  Create Pick-up Game
-			</button>
+			<h2 class="display-4 text-uppercase">PICK-UP GAMES</h2>
+			<p class="lead">Here you can checkout upcoming pick-up games, or initiate and organize a pick-up game and invite other players near you.</p>
+			<button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#pugregform">Create Pick-up Game</button>
 
 
 <!-- moodal for create pickup game -->
@@ -65,7 +61,7 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="pugregformLabel">Create a Pick-up Game</h5>
+							<h5 class="modal-title" id="pugregformLabel text-uppercase">Create a Pick-up Game</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							    <span aria-hidden="true">&times;</span>
 							</button>
@@ -108,7 +104,8 @@
 							    	<option>20</option>
 								</select>
 							</div>
-							<input id="date" type="date">
+							<input class="mb-3" id="date" type="date">
+							<br>
 							From<input id="time" type="time"> to <input id="time" type="time">
 							<div class="form-group mt-3">
 								<label for="puginputSlots">Payment Methods</label>
@@ -131,7 +128,7 @@
 
 		</div>
 			<div class="col-12">
-				<h2>Pick up games available</h2>
+				<h2 class="text-uppercase">Pick up games available</h2>
 			</div>
 
 
@@ -165,11 +162,11 @@
 
 
 			<div class="col-lg-6">
-				<div class="card bg-light p-2">
+				<div class="card bg-light p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
-								<div class="card-title">Sports Center Starmall Alabang</div>
+								<div class="card-title text-uppercase">Sports Center Starmall Alabang</div>
 								<h6 class="card-subtitle text-muted mb-2">June 2, 2018</h6>
 								<h6 class="card-subtitle text-muted mb-2">5:00PM-8:00PM</h6>
 								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
@@ -183,7 +180,7 @@
 								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
 							</div>
 						</div>
-						<button type="button" class="btn btn-danger mt-2" data-toggle="modal" data-target="#pugjoin">
+						<button type="button" class="btn btn-danger mt-2 text-uppercase disabled" data-toggle="modal" data-target="#pugjoin">
 						  Reserve a slot
 						</button>
 					</div>
@@ -192,11 +189,11 @@
 
 
 			<div class=" col-lg-6">
-				<div class="card bg-light p-2">
+				<div class="card bg-light p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
-								<div class="card-title">Gatorade Hoops Center</div>
+								<div class="card-title text-uppercase">Gatorade Hoops Center</div>
 								<h6 class="card-subtitle text-muted mb-2">June 3, 2018</h6>
 								<h6 class="card-subtitle text-muted mb-2">7:00PM-10:00PM</h6>
 								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
@@ -209,8 +206,60 @@
 								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">8</span></h6>
 							</div>
 						</div>
-						<button class="btn btn-danger mt-2" type="button" data-toggle="modal" data-target="#pugjoin">
+						<button class="btn btn-danger mt-2 text-uppercase" type="button" data-toggle="modal" data-target="#pugjoin">
 						Reserve a slot
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-6">
+				<div class="card bg-light p-2 mb-2">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-8">
+								<div class="card-title text-uppercase">Sports Center Starmall Alabang</div>
+								<h6 class="card-subtitle text-muted mb-2">June 2, 2018</h6>
+								<h6 class="card-subtitle text-muted mb-2">5:00PM-8:00PM</h6>
+								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
+								<h6 class="card-subtitle text-muted mb-1">Contact no.: 09454774961</h6>
+								<h6 class="card-subtitle text-muted">Payment method: Gcash - 123456789</h6>
+
+							</div>
+							<div class="col-4 text-right">
+								<h5 class="car-subtitle mb-2">Status: <span>Full</span></h5>
+								<h6 class="car-subtitle mb-2">Rate: 200₱/Player</h6>
+								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
+							</div>
+						</div>
+						<button type="button" class="btn btn-danger mt-2 text-uppercase" data-toggle="modal" data-target="#pugjoin">
+						  Reserve a slot
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="card bg-light p-2 mb-2">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-8">
+								<div class="card-title text-uppercase">Sports Center Starmall Alabang</div>
+								<h6 class="card-subtitle text-muted mb-2">June 2, 2018</h6>
+								<h6 class="card-subtitle text-muted mb-2">5:00PM-8:00PM</h6>
+								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
+								<h6 class="card-subtitle text-muted mb-1">Contact no.: 09454774961</h6>
+								<h6 class="card-subtitle text-muted">Payment method: Gcash - 123456789</h6>
+
+							</div>
+							<div class="col-4 text-right">
+								<h5 class="car-subtitle mb-2">Status: <span>Full</span></h5>
+								<h6 class="car-subtitle mb-2">Rate: 200₱/Player</h6>
+								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
+							</div>
+						</div>
+						<button type="button" class="btn btn-danger mt-2 text-uppercase" data-toggle="modal" data-target="#pugjoin">
+						  Reserve a slot
 						</button>
 					</div>
 				</div>
@@ -223,14 +272,17 @@
 
 
 	<div class="footer row p-5 m-0">
-		<div class="col-6 col-md-4">
-			<a href="#">About</a>
-			<br>
-			<a href="#">Contact us</a>
-			<br>
-			<a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-			<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-			<a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+		<div class="col-6">
+			<p class="m-0">Contact us:</p>
+			
+			<a href="mailto:clear.out@gmail.com">clear.out@gmail.com</a>
+			<p>094569420143</p>
+		</div>
+		<div class="col-6 text-right">	
+			<a class="mr-5" href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+			<a class="mr-5" href="http://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+			<a class="mr-5" href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+			<p class="text-right mr-5">Copyright &copy; 2018 Clear Out</p>
 		</div>
 	</div>
 
