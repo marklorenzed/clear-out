@@ -11,17 +11,21 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<link rel="icon" type="img/png/jpg" href="assets/images/icon.png">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<!-- google font  -->
-	<link href="https://fonts.googleapis.com/css?family=Aldrich|Julius+Sans+One|Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Raleway|Exo:900,900i|Kanit:800|Passion+One:700" rel="stylesheet">
+
 	
 	<title></title>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+	<nav class="navbar navbar-expand-lg  navbark-dark fixed-top" id="navbar">
 		
-		<a href="#" class="navbar-brand p-0 m-0"> CLEAR OUT </a>
+		<a href="#" class="navbar-brand p-0 m-0"><img class="logo" src="assets/images/logo.png">CLEAR OUT</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
@@ -30,106 +34,125 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+					<a href="index.html" class="nav-link">HOME <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-				    <a class="nav-link" href="#">Games</a>
+				    <a class="nav-link" href="index2.html">GAMES</a>
 				</li>
 				<li class="nav-item">
-				    <a class="nav-link" href="#">Login</a>
+				    <a class="nav-link" href="index4.html">LOGIN/SIGNUP</a>
 				</li>
-				<li class="nav-item">
-				    <a class="nav-link" href="#">Sign up</a>
-				</li>
+				
 			</ul>
 		</div>
 	</nav>
 
-	<div class="container-fluid p-0">
+	<div class="container p-0">
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			
-			<a href="#" class="navbar-brand p-0 m-0"> CLEAR OUT </a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#">Games</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#">Login</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="#">Sign up</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="row  landingPage1 m-0">
-			<div class="col-md-6 col-12 p-5">
-
-				<div class="mt-5">
-					<h1 class="header">Form your team and join the upcoming leagues.</h1>
-					<button class="btn btn-light" type="button">Join now</button>
-				</div>
-			</div>			
+		<div class="landingPage1 p-0">
+			<img src="assets/images/img31.png" class="backdrop">
+			<h1 class="header text-center animated fadeIn">CLEAR OUT</h1>
+			<h2 class="header1 text-uppercase p-2">Join Basketball Leagues and Find Pick-up games near you.</h2>
+			<a href="#landingPage2" class="btn-1"><img src="assets/images/arrowdown.png"></a>			
 		</div>
 
-		<div class="row landingPage2 p-0 m-0">
-			<div class="col-md-8 col-12 p-0">
-				<img src="assets/images/img32.jpg" class="landingPageimg">
+		<div class="row landingPage2 p-0 m-0" id="landingPage2">
+			<div class="col-md-12 col-lg-8 col-12 p-0">
+				<img src="assets/images/img3.jpg" class="landingPageimg">
 			</div>
 
-			<div class="col-md-4 col-12 p-5">
-				<h2 class="text-center mb-5">Find pick up games near you</h2>
-				<button class="btn btn-danger"> Find a game </button>
+			<div class="col-lg-4 col-md-12 col-12 p-5">
+				<h2 class="text-center mb-4">FIND PICK-UP GAMES NEAR YOU</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+				<a href="index2.html"><button class="btnHeader" type="button"> FIND A GAME</button></a>
 
 			</div>
 		</div>
 
 		<div class="row landingPage3 p-0 m-0">
 
-			<div class="col-md-4 col-12 p-5">
-				<h2 class="text-center mb-5">Do you want to host and organize an event?</h2>
-				<p>Coordinate with us and let's make it possible</p>
-				<p>Click here to know the details</p>
-				<button class="btn btn-danger">Let's Go!</button>
+			<div class="col-lg-4 order-2 order-lg-1 col-12 p-5">
+				<h2 class="text-left mb-3 text-uppercase">Do you want to host and organize an event or form your team and join upcoming leagues?</h2>
+				<p class="m-0">Coordinate with us and let's make it possible</p>
+				<p class="m-0">Click here to know the details</p>
+				<a href="index2.html"><button class="btnHeader mt-3" type="button"> JOIN THE LEAGUE </button></a>
 			</div>
-			<div class="col-md-8 col-12 p-0">
-			<img src="assets/images/img1x.jpg" class="landingPageimg">
+			<div class="col-lg-8 order-1 order-lg-2 col-12 p-0">
+				<img src="assets/images/img1x.jpg" class="landingPageimg">
 			</div>
+		
+		</div>
+		
+		<div class="row landingPage4 p-5 m-0">
+			<div class="col-12">
+				<h2 class="pb-3">ABOUT US</h2>
+			</div>
+			<div class="p-2 col-10 offset-1 offset-lg-0 col-lg-4">
+				<div class="about">
+					<div class="about1 p-2 text-center">
+						<img class="aboutAvatar mt-3" src="assets/images/about1.jpg">
+					</div>
+					<div class="about2 p-4">
+						<h4 class="m-0">Kathryn Bernardo</h4>
+						<small class="">Owner</small>
+						<p class="font-italic pt-2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat."</p>
+					</div>
+				</div>
+			</div>
+			<div class="p-2 col-10 offset-1 offset-lg-0 col-lg-4">
+				<div class="about">
+					<div class="about1 p-2 text-center">
+						<img class="aboutAvatar mt-3" src="assets/images/about2.png">
+					</div>
+					<div class="about2 p-4">
+						<h4 class="m-0">Gerald Anderson</h4>
+						<small class="">CEO</small>
+						<p class="font-italic pt-2">"Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</div>
+			</div>
+			<div class="p-2 col-10 offset-1 offset-lg-0 col-lg-4">
+				<div class="about">
+					<div class="about1 p-2 text-center">
+						<img class="aboutAvatar mt-3" src="assets/images/about3.png">
+					</div>
+					<div class="about2 p-4">
+						<h4 class="m-0">John Lloyd</h4>
+						<small class="">Manager</small>
+						<p class="font-italic pt-2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exerteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</div>
+			</div>
+
 			
 
-
 		</div>
-
-
-
-
-		<div class="footer row p-5 m-0">
-			<div class="col-6 col-md-4">
-				<a href="#">About</a>
-				<br>
-				<a href="#">Contact us</a>
-				<br>
-				<a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-				<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-				<a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-			</div>
-		</div>
-
-
 
 	</div>
-
+	<div class="footer row p-5 m-0">
+		<div class="col-6">
+			<p>Contact us: </p>
+			<a href="mailto:clear.out@gmail.com">clear.out@gmail.com</a>
+			<p>094569420143</p>
+		</div>
+		<div class="col-6 text-right">	
+			<a class="mr-5" href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+			<a class="mr-5" href="http://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+			<a class="mr-5" href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+			<p class="text-right mr-5">Copyright &copy; 2018 Clear Out</p>
+		</div>
+	</div>
 
 
 
