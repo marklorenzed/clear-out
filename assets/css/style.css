@@ -245,6 +245,7 @@ input {
 	border: 1px solid #e6e6e6;
 	border-radius: 1px;
 	background-color: #e6e6e6;
+	width: 100%;
 }
 .card:hover {
 	background-color: #d9d9d9;
@@ -258,9 +259,7 @@ input {
 	border-radius: 5px;
 	border: 1px solid #d9d9d9;
 }
-.ucgames {
-	max-height: 500px; 
-}
+
 
 .tablecontainer {
 	background-color: #cccccc;
@@ -404,7 +403,7 @@ a>i[class*=fa-twitter-square]:hover	{
 		font-size: 30px;
 	}
 	.card-title {
-		font-size: 50px;
+		font-size: 30px;
 	}
 	.lead {
 		font-size: 30px;
@@ -548,5 +547,10 @@ a>i[class*=fa-twitter-square]:hover	{
 	.signup {
 		max-width: 500px;
 	}
-	
+	h2 {
+		font-size: 1em;
+	}
+	h6 {
+		font-size: 20px;
+	}
 }
