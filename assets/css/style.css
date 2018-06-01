@@ -550,5 +550,7 @@ a>i[class*=fa-twitter-square]:hover	{
 	h2 {
 		font-size: 1em;
 	}
-	
+	h6 {
+		font-size: 20px;
+	}
 }
