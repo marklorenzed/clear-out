@@ -17,7 +17,7 @@ body {
 }
 
 .landingPage1 {
-	height: 500px;
+	height: 70vh;
 	position: relative;
 }
 .backdrop {
@@ -29,8 +29,9 @@ body {
 	opacity: 1;
 }
 .about {
-	border: 1px solid #333333;
+	border: 1px solid #f2f2f2;
 	border-radius: 2px;
+	background-color: #f2f2f2;
 	height: 100%;
 }
 .aboutAvatar {
@@ -69,10 +70,12 @@ a {
 
 .nav-link {
 	color: #b0b0b0;
+	font-size: 2em;
 }
 a:hover {
 	color: white;
 	text-decoration: none;
+	transition-duration: 0.5s;
 }
 
 p {
@@ -80,18 +83,19 @@ p {
 }
 h2 {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
 }
 h3 {
 	font-family: 'Montserrat', sans-serif;
 }
 h4 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5em;
+	
 }
 .navbar-brand {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 3em;
 	color: #b35900;
 }
 
@@ -110,12 +114,12 @@ h4 {
 
 .btn-danger {
 	background-color: #cc2900;
-	border: 1px solid #cc2900;
 	border-radius: 1px;
 }
 
 .btn-danger:hover {
-	background-color: #ff3300;
+	background-color: #e65c00;
+	transition-duration: 0.3s;
 }
 
 .btn-1:hover {
@@ -124,13 +128,14 @@ h4 {
 	border: 10px solid orange;
 }
 .btnHeader {
-	min-width: 120px;
-	height: 30px;
+	min-width: 200px;
+	height: 50px;
 	border-radius: 3px;
 	border: 1px solid #ff3300;
 	background-color: #ff3300;
 	padding: 0 20px 0 20px;
 	color: white;
+	font-size: 2em;
 }
 .btnHeader:hover {
 	background-color: #cc2900;
@@ -142,7 +147,7 @@ h4 {
 
 .header {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 7em;
+	font-size: 5em;
 	font-weight: 800;
 	color: #b35900;
 	position: absolute;
@@ -218,29 +223,35 @@ hr {
 .login {
 	border-radius: 2px;
 	border: 1px solid #b3b3b3;
-	width: 300px;
+	width: 100%;
+}
+.sing-in-button {
+	background-color: #ffcc66;
 }
 .signup {
 	border-radius: 2px;
 	border: 1px solid #b3b3b3;
-	width: 300px;
+	width: 100%;
 }
 input {
-	height: 30px;
+	height: 40px;
 }
 .ogleague {
-	border: 1px solid #f2f2f2;
+	border: 1px solid #e6e6e6;
 	border-radius: 1px;
-	background-color: #f2f2f2;
+	background-color: #e6e6e6;
 }
 .card {
-	border: 1px solid #f2f2f2;
+	border: 1px solid #e6e6e6;
 	border-radius: 1px;
-	background-color: #f2f2f2;
+	background-color: #e6e6e6;
+}
+.card:hover {
+	background-color: #d9d9d9;
 }
 .leagueDetails {	
 	color: gray;
-	font-size: 1em;
+	font-size: 2em;
 }
 #date,
 #time{
@@ -266,25 +277,47 @@ th {
 }
 
 a>i[class*=fa-facebook-square]:hover	{
+	 transition-duration: 0.5s;
 	color: #3B5998 ;
 }
 a>i[class*=fa-instagram]:hover	{
+	 transition-duration: 0.5s;
 	color: #ff00ff;
 }
 a>i[class*=fa-twitter-square]:hover	{
+	 transition-duration: 0.5s;
 	color: #1DA1F2 ;
 }
-.form {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
+
 .container-signup {
 	position: relative;
 	min-height: 1000px;
 }
+.sign-up-button {
+	font-size: 30px;
+	min-width: 200px;
+	height: 50px;
+	background-color: #ffcc66;
+	border-radius: 3px;
+	padding: 0 20px 0 20px;
+	color: white;
+}
+.sign-in-button {
+	font-size: 30px;
+	min-width: 200px;
+	height: 50px;
+	background-color: #ff8c1a;
+	border-radius: 3px;
+	padding: 0 20px 0 20px;
+	color: white;
+}
 
-
+.puOpen {
+	color: #33cc33;
+}
+.puFull {
+	color: #ff471a;
+}
 
 
 
@@ -323,21 +356,77 @@ a>i[class*=fa-twitter-square]:hover	{
 /*/ Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.landingPage1 {
-
-	height: 50vh;
-	
+	height: 70vh;	
 	}
-
-
+	small {
+		font-size:1em;
+	}
+	h4 {
+		font-size:2em;
+	}
+	td {
+		font-size: 25px;
+	}
+	.archive {
+		font-size: 30px;
+		text-align: center;
+	}
+	.finalscore {
+	font-size: 2em; 
+	}
+	th {
+		font-size: 30px;
+	}
 }
 
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	.landingPage1 {
-
-	height: 50vh;
+	height: 70vh;
+	}
+	p {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	small {
+		font-size:20px;
+	}
+	h4 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size:2em;
+	}
+	h6 {
+		font-size: 30px;
+	}
+	.card-title {
+		font-size: 50px;
+	}
+	.lead {
+		font-size: 30px;
+	}
 	
+	.btnHeader {
+	min-width: 200px;
+	height: 30px;
+	font-size: 2em;
+	}
+	.container-games {
+		min-height: 85vh;
+	}
+	.container-login {
+		min-height: 85vh;
+	}
+	
+	.btnHeader {
+		font-size: 1em;
+	}
+	th {
+		font-size: 20px;
 	}
 
 }
@@ -345,9 +434,55 @@ a>i[class*=fa-twitter-square]:hover	{
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.landingPage1 {
-
-	height: 80vh;
-	
+	height: 100vh;
+	}
+	.nav-link {
+	font-size: 1em;
+	}
+	.header {
+		font-size: 8em;
+	}
+	.navbar-brand {
+	font-size: 2em;
+	}
+	.backdrop {
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	max-height: 400px;
+	max-width: 600px; 
+	opacity: 1;
+	}
+	p {
+		font-size: 1em;
+	}
+	small {
+		font-size:1em;
+	}
+	h4 {
+		font-size:1em;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.leagueDetails {	
+		font-size: 1em;
+	}
+	.archive {
+		font-size: 20px;
+	}
+	td {
+		font-size: 1em;
+	}
+	.btnHeader {
+		font-size: 1em;
+	}
+	.btn-block {
+	font-size: 20px;
+	height: 30px;
 	}
 
 }
@@ -384,7 +519,9 @@ a>i[class*=fa-twitter-square]:hover	{
 		top: 90%;
 		left: 50%;
 	}
-
+	.nav-link {
+	font-size: 1em;
+	}
 
 	/*index 2*/
 	.headlines {
@@ -396,5 +533,20 @@ a>i[class*=fa-twitter-square]:hover	{
 		min-height: 1000px;
 	}
 	
+	.navbar-brand {
+	font-size: 2em;
+	}
+	small {
+		font-size:1em;
+	}
+	.archive {
+		font-size: 20px;
+	}
+	.login {
+		max-width: 500px;
+	}
+	.signup {
+		max-width: 500px;
+	}
 	
 }

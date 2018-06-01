@@ -11,6 +11,8 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="icon" type="img/png/jpg" href="assets/images/icon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!-- google font  -->
@@ -26,7 +28,7 @@
 	
 	<nav class="navbar navbar-expand-lg  navbark-dark" id="navbar">
 		
-		<a href="#" class="navbar-brand p-0 m-0"><img class="logo" src="assets/images/logo.png">CLEAR OUT</a>
+		<a href="index.html" class="navbar-brand p-0 m-0"><img class="logo" src="assets/images/logo.png">CLEAR OUT</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
 			<span class="navbar-toggler-icon"></span>
@@ -38,18 +40,18 @@
 					<a href="index.html" class="nav-link">HOME <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-				    <a class="nav-link" href="index2.html">ON-GOING LEAGUE</a>
+				    <a class="nav-link" href="league.html">ON-GOING LEAGUE</a>
 				</li>
 				<li class="nav-item">
-				    <a class="nav-link" href="index3.html">PICK-UP GAMES</a>
+				    <a class="nav-link" href="pickup.html">PICK-UP GAMES</a>
 				</li>	
 			</ul>
 		</div>
 	</nav>
 	<div class="container container-games">
 
-		<div class="row p-3">
-			<div class="jumbotron jumbotron-fluid bg-light col-12 p-4">
+		<div class="row">
+			<div class="jumbotron jumbotron-fluid col-12 p-4  animated bounceInDown">
 
 			<h2 class="display-4 text-uppercase">PICK-UP GAMES</h2>
 			<p class="lead">Here you can checkout upcoming pick-up games, or initiate and organize a pick-up game and invite other players near you.</p>
@@ -127,9 +129,7 @@
 
 
 		</div>
-			<div class="col-12">
-				<h2 class="text-uppercase">Pick up games available</h2>
-			</div>
+			
 
 
 <!-- modal for reserve a slot -->
@@ -159,10 +159,13 @@
 <!-- modal for reserve a slot end here -->
 
 
+			
+			<div class="col-12 animated bounceInLeft">
+				<h1 class="text-uppercase">Pick up games available</h2>
+			</div>
 
-
-			<div class="col-lg-6">
-				<div class="card bg-light p-2 mb-2">
+			<div class="col-lg-6 animated bounceInLeft">
+				<div class="card p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
@@ -175,7 +178,7 @@
 
 							</div>
 							<div class="col-4 text-right">
-								<h5 class="car-subtitle mb-2">Status: <span>Full</span></h5>
+								<h5 class="car-subtitle mb-2">Status: <span class="puFull">Full</span></h5>
 								<h6 class="car-subtitle mb-2">Rate: 200₱/Player</h6>
 								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
 							</div>
@@ -188,20 +191,20 @@
 			</div>
 
 
-			<div class=" col-lg-6">
-				<div class="card bg-light p-2 mb-2">
+			<div class=" col-lg-6 animated bounceInRight">
+				<div class="card p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
 								<div class="card-title text-uppercase">Gatorade Hoops Center</div>
 								<h6 class="card-subtitle text-muted mb-2">June 3, 2018</h6>
 								<h6 class="card-subtitle text-muted mb-2">7:00PM-10:00PM</h6>
-								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
+								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Kyrie Irving</span></h6>
 								<h6 class="card-subtitle text-muted mb-1">Contact no.: 09454774961</h6>
 								<h6 class="card-subtitle text-muted">Payment method: BPI - 123456789 </h6>
 							</div>
 							<div class="col-4 text-right">
-								<h5 class="car-subtitle mb-2">Status: <span class="">Open</span></h5>
+								<h5 class="car-subtitle mb-2">Status: <span class="puOpen">Open</span></h5>
 								<h6 class="car-subtitle mb-2">Rate: 350₱/Player</h6>
 								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">8</span></h6>
 							</div>
@@ -213,23 +216,23 @@
 				</div>
 			</div>
 			
-			<div class="col-lg-6">
-				<div class="card bg-light p-2 mb-2">
+			<div class="col-lg-6 animated bounceInLeft">
+				<div class="card p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
-								<div class="card-title text-uppercase">Sports Center Starmall Alabang</div>
+								<div class="card-title text-uppercase">PLAYLAND INDOOR BASKETBALL COURT</div>
 								<h6 class="card-subtitle text-muted mb-2">June 2, 2018</h6>
 								<h6 class="card-subtitle text-muted mb-2">5:00PM-8:00PM</h6>
-								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
+								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Steph Curry</span></h6>
 								<h6 class="card-subtitle text-muted mb-1">Contact no.: 09454774961</h6>
 								<h6 class="card-subtitle text-muted">Payment method: Gcash - 123456789</h6>
 
 							</div>
 							<div class="col-4 text-right">
-								<h5 class="car-subtitle mb-2">Status: <span>Full</span></h5>
+								<h5 class="car-subtitle mb-2">Status: <span class="puOpen">Open</span></h5>
 								<h6 class="car-subtitle mb-2">Rate: 200₱/Player</h6>
-								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
+								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">9</span></h6>
 							</div>
 						</div>
 						<button type="button" class="btn btn-danger mt-2 text-uppercase" data-toggle="modal" data-target="#pugjoin">
@@ -239,23 +242,23 @@
 				</div>
 			</div>
 
-			<div class="col-lg-6">
-				<div class="card bg-light p-2 mb-2">
+			<div class="col-lg-6 animated bounceInRight">
+				<div class="card p-2 mb-2">
 					<div class="card-body">
 						<div class="row">
 							<div class="col-8">
-								<div class="card-title text-uppercase">Sports Center Starmall Alabang</div>
+								<div class="card-title text-uppercase">TOBY’S ARENA BASKETBALL COURT</div>
 								<h6 class="card-subtitle text-muted mb-2">June 2, 2018</h6>
 								<h6 class="card-subtitle text-muted mb-2">5:00PM-8:00PM</h6>
-								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>Lebron James</span></h6>
+								<h6 class="card-subtitle text-muted mb-1">Organizer: <span>James Harden</span></h6>
 								<h6 class="card-subtitle text-muted mb-1">Contact no.: 09454774961</h6>
 								<h6 class="card-subtitle text-muted">Payment method: Gcash - 123456789</h6>
 
 							</div>
 							<div class="col-4 text-right">
-								<h5 class="car-subtitle mb-2">Status: <span>Full</span></h5>
+								<h5 class="car-subtitle mb-2">Status: <span class="puOpen">Open</span></h5>
 								<h6 class="car-subtitle mb-2">Rate: 200₱/Player</h6>
-								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">0</span></h6>
+								<h6 class="card-subtitle text-muted mb-2">Slots left: <span class="slots">5</span></h6>
 							</div>
 						</div>
 						<button type="button" class="btn btn-danger mt-2 text-uppercase" data-toggle="modal" data-target="#pugjoin">
@@ -271,22 +274,22 @@
 
 
 
-	<div class="footer row p-5 m-0">
+	<div class="footer row p-3 m-0">
 		<div class="col-6">
 			<p class="m-0">Contact us:</p>
 			
-			<a href="mailto:clear.out@gmail.com">clear.out@gmail.com</a>
+			<p><a href="mailto:clear.out@gmail.com">clear.out@gmail.com</a></p>
 			<p>094569420143</p>
 		</div>
 		<div class="col-6 text-right">	
-			<a class="mr-5" href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
-			<a class="mr-5" href="http://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
-			<a class="mr-5" href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
-			<p class="text-right mr-5">Copyright &copy; 2018 Clear Out</p>
+			<a class="mr-5" href="http://www.facebook.com/dumathegreat"><i class="fab fa-facebook-square fa-2x"></i></a>
+			<a class="mr-5" href="http://www.instagram.comml_duma"><i class="fab fa-instagram fa-2x"></i></a>
+			<a class="mr-5" href="http://www.twitter.com/dumamon"><i class="fab fa-twitter-square fa-2x"></i></a>
+		</div>
+		<div class="col-12 text-center">
+			<small class="mr-5 mt-2">&copy; 2018 Clear Out. All Rights Reserved. Design by ML Dumalaon.</small>
 		</div>
 	</div>
-
-
 
 
 
